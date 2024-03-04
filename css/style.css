@@ -8,6 +8,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+/* header section */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +26,7 @@ header h1{
 }
 
 .nav {
+  margin: 0 30px;
   display: flex;
   list-style-type: none;
 }
@@ -54,4 +56,23 @@ h6 {
 p {
   margin: 0;
   padding: 0;
+}
+
+/* her  section  */
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 400px;
+  justify-content: flex-end;
+  align-items: end
+
+}
+.banner h2 {
+  background-color: rgb(117, 197, 189) ;
+  margin: 30px 90px;
+  padding: 20px;
+
 }
