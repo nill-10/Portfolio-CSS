@@ -92,4 +92,33 @@ p {
   align-content: center;
 }
 
+#about {
+  grid-area: about;
+}
+#work {
+  grid-area: work;
+}
+#contact {
+  grid-area: contact;
+}
+.page-section {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-content: center;
+  margin:10px 0
+}
+.text {
+  width:85%;
+  padding:0 20px;
+  color:rgb(69, 69, 82);
+}
+.section h2 {
+  font-size: 40px;
+  line-height: 80px;
+  width:60%;
+  margin-left:20%;
+  color: var(--main-color)
+  
+}
+
 
