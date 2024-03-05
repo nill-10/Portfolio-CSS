@@ -36,7 +36,7 @@ header h1{
   color: rgb(117, 197, 189);
   font-size: 20px;
   text-underline-offset: 5px;
-  
+ 
 }
 .nav a:hover {
   color: #fff;
@@ -78,20 +78,21 @@ p {
 }
 
 /* main section */
+
 .page-wrapper {
-  display: grid;
-  grid-template-rows:20% 65% 15% ;
-  grid-template-columns: 20% 80%;
-  grid-template-areas: "about about"
-  "work work"
-  "contact contact";
-  height:100vh;
-  padding:30px 30px 0 30px;
-  margin-top: 50px;
+  display:grid;
+  grid-template-columns:20% 80% ;
+  grid-template-rows:20% 60% 20% ;
+  grid-template-areas:"about about"
+  " work work"
+  " contact contact" ;
+  padding:20px 40px 0 30px;
+  margin-top: 20px;
+  /* height:100vh; */
   justify-content:center;
   align-content: center;
+  
 }
-
 #about {
   grid-area: about;
 }
@@ -101,24 +102,34 @@ p {
 #contact {
   grid-area: contact;
 }
-.page-section {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  align-content: center;
-  margin:10px 0
-}
 .text {
-  width:85%;
-  padding:0 20px;
-  color:rgb(69, 69, 82);
+  float: right;
+  width:70%;
 }
-.section h2 {
-  font-size: 40px;
-  line-height: 80px;
-  width:60%;
-  margin-left:20%;
-  color: var(--main-color)
-  
+.page-section h2 {
+  font-size: 50px;
+  float: left;
+  width:50%;
+  margin-left:5%;
+}
+.imgbox {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px ; 
+  grid-template-areas: 
+   "project1 project1"
+  "project2" "project3";
+
+  padding: 0 100px 0 20px;
+  gap: 10px;
 }
 
-
+#project1{
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+#project2{
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+#project3{
+  background-image: url(../images/02-portfolio-3.jpg);
+}
