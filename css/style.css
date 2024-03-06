@@ -88,21 +88,19 @@ p {
   " contact contact" ;
   padding:20px 40px 0 30px;
   margin-top: 20px;
-  height:100vh
-  /* justify-content:center; */
-  /* align-items:center; */
-  
+  height:100vh;
+ 
 }
 
 .vl1 {
   border-left: 6px solid rgb(80, 137, 151);
-  height: 150px;
+  height: 170px;
   position: absolute;
   left :25%
 }
 .vl2 {
   border-left: 6px solid rgb(80, 137, 151);
-  height: 500px;
+  height: 520px;
   position: absolute;
   left :25%
 }
@@ -122,27 +120,41 @@ p {
 #contact {
   grid-area: contact;
 }
+
+.me {
+  padding-left: 6%;
+}
+
+.work h2{
+ padding-top: 3%;
+ padding-left: 1%;
+} 
+
+
 .text {
   position: absolute;
   float: right;
-  width:100%;
-  margin-top: 20px;
+  font-size: 22px;
+  background-color:  rgba(130, 228, 218, 0.144) ;
+  width:70%;
+  padding: 1%;
+  /* margin-top: 10px; */
   margin-left: 400px;
+ 
 }
 .page-section h2 {
   position: absolute;
   font-size: 50px;
-
-  /* float: left; */
   width:50%;
   margin-left:5%;
-  /* margin-top: 80px; */
+  color: rgb(69, 69, 82);
 }
+
 .work {
   margin-top: 5%;
 }
+
 .imgbox {
-  
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 250px 250px ; 
@@ -150,23 +162,28 @@ p {
    "project1 project1"
   "project2" "project3";
   width:100%;
-  padding-left: 30%;
-  /* padding-bottom: 30%; */
- 
-  
-  
-  /* padding: 0 100px 0 20px; */
+  padding-left: 27%;
   gap: 10px;
 }
 
 .title {
   background-color: rgba(0,0,0,0.7);
   padding: 15px;
-  /* height: 25px; */
-  color: white;
+  /* color: white; */
   font-size: 25px;
 
 }
+.title a {
+  color: #bfd7db;
+  text-decoration: none;
+  
+}
+.title a:hover{
+  color: #fff;
+  font-size: 28px;
+}
+
+
 .project {
   background-position: center;
   background-size: cover;
@@ -177,8 +194,6 @@ p {
   align-content: end;
  
 }
-
-
 
 
 #project1{
@@ -200,27 +215,33 @@ p {
 
 
 /* footer */
+#contact {
+  padding-top:1% ;
+}
+
 .contactme {
-/* position: absolute; */
 display: flex;
 list-style-type: none;
-margin-left: 30%;
-margin-top: 5%;
-padding: 0 10%;
+margin-left:27%;
+/* margin-top: 1%; */
 justify-content: space-between;
-
+background-color: #f2f3f489;
+padding: 2%;
 }
+
 .contact {
   margin-top: 15%;
+}
+
+.contactList {
+  font-size: 25px;
+  text-underline-offset: 5px;
  
 }
-.contactList {
-  /* padding: 10px; */
-  color: rgb(117, 197, 189);
-  font-size: 20px;
-  text-underline-offset: 5px;
-  margin: 0 30px;
-  
+
+.contactme a:hover {
+  color: #98dee9;
+  font-size: 22px;
 }
 
 
